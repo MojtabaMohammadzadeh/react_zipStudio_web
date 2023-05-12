@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face {
+    font-family: 'Dana';
+    src:local('Dana'), url('./Fonts/DanaFaNum-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'DanaLight';
+    src:local('DanaLight'), url('./Fonts/DanaFaNum-Light.ttf');
+  }
+  @font-face {
+    font-family: 'DanaBold';
+    src:local('DanaBold'), url('./Fonts/DanaFaNum-ExtraBold.ttf');
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family:'Dana', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

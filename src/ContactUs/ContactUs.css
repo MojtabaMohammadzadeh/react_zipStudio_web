@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* **********Main Part**************************** */
+.main_parts{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+
+/* *****************3D Part**************************** */
+
+.three_D_parts{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ******************Content Parts******************************* */
+
+.content_parts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_content{
+    font-family: DanaBold;
+    margin: 16px 0px;
+}
+
+.text_content{
+    text-align: center;
+    margin: 8px 16px;
+    padding: 0px 8px;
+    direction: rtl;
+}
+
+
+/* ******************NeuMorphism Click******************** */
+
+ .contact_infos{
+    display: flex;
+    font-family: DanaBold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: -8px;
+     background: #e0e5ec;
+  }
+  
+  h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    padding: 0px 32px;
+    
+    bottom: 30px;
+  }
+  h1:before{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+  }
+  
+  .frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    width: 70%;
+    position: relative;
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+     border-radius: 10px;
+  }
+  
+  .btn{
+    height: 50%;
+    width: 20%;
+    border-radius: 3px;
+    background: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 16px;
+    color: rgba(42, 52, 84, 1);
+    text-decoration: none;
+  }
+  .btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+
+
+  /* ********************Contact Form **************************** */
+  .contact_form_main{
+    width: 100%;
+    height: 100%;
+    background-color: #caebee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    direction: rtl;
+    align-items: start;
+    padding: 16px 32px;
+  }
+
+  .form-title{
+    margin-bottom: 8px;
+    margin-right: 8px;
+    color: #353535;
+  }
+  .form-main{
+    width: 100%;
+
+  }
+
+  .form-control {
+    width: 70%;
+    height: 50px;
+    
+    margin-bottom: 32px;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+  }
+  .form-control input {
+    width: 100%;
+    height: 100%;
+    font-family: Dana;
+    border: none;
+    outline:none;
+    background:none;
+    font-size: 18px;
+    color: #555;
+    padding:20px 10px 20px 5px;
+  }
+
+  .form-control:hover  {
+   
+    box-shadow: inset 2px 2px 3px #cbced1,
+                inset -2px -2px 3px #ffffff;
+  }
+
+  .form-control-message{
+    width: 70%;
+    height:90px;
+    
+    margin-bottom: 32px;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+  }
+
+  .form-control-message textarea{
+    width: 100%;
+    height: 100%;
+    font-family: Dana;
+    border: none;
+    outline:none;
+    background:none;
+    direction: rtl;
+    font-size: 14px;
+    color: #000000;
+    padding:20px 10px 20px 5px;
+    text-align: start;
+  }
+  .form-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-btn {
+    outline: none;
+    font-family: DanaBold;
+    border:none;
+    cursor: pointer;
+    width:50%;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s;
+  }
+  .form-btn:hover {
+    background:#db912f;
+    font-size: 14px;
+    box-shadow: inset 2px 2px 1px #cbced1,
+    inset -2px -2px 1px #ffffff;
+  }
+  .form-btn:active {
+    background:#db912f;
+  }
+  
+/* ***************** Mobile **************************** */
+
+
+@media screen and (max-width: 960px) {
+    /* **********Main Part**************************** */
+.main_parts{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+
+/* *****************3D Part**************************** */
+
+.three_D_parts{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ******************Content Parts******************************* */
+
+.content_parts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_content{
+    font-family: DanaBold;
+    margin: 16px 0px;
+}
+
+.text_content{
+    text-align: center;
+    margin: 8px 16px;
+    padding: 0px 8px;
+    direction: rtl;
+}
+
+
+.form-control {
+    width: 90%;
+    height: 40px;
+    
+    margin-bottom: 16px;
+   
+  }
+  .form-control input {
+    width: 100%;
+    height: 100%;
+    font-family: Dana;
+    border: none;
+    outline:none;
+    background:none;
+    font-size: 18px;
+    color: #555;
+    
+  }
+
+  .form-control-message{
+    width: 90%;
+   
+  }
+
+}
